@@ -129,7 +129,7 @@ The evaluation itself is very simple, the function `sat()` is used to evaluate t
 table1 <- sat(mo = model_d01, ob = tempo,rname = 'hcho_statistic')
 print(table1)
 
-# for metrics for categorical evaluation
+# for categorical metrics
 table2 <- sat(mo = model_d01, ob = tempo,rname = 'hcho_categoric',eval_function = cate,threshold = 0.15,verbose = FALSE)
 print(table2)
 
