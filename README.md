@@ -11,6 +11,7 @@ c. Run the **WRF-Chem** (or get a wrfout file)
 
 **[1]** _Schuch, D., (2025). “eva3dm: A R-package for model evaluation of 3D weather and air quality models.” **Journal of Open Source Software**, 10(108), 7797, [doi:10.21105/joss.07797](https://doi.org/10.21105/joss.07797)_
 
+
 ## 1. Opening and visualizating TEMPO data
 
 There is a example of download script (`download_hchoc_2024-07-01.sh`) and pre-processing script (`aggregate_TEMPO.R`) that can be used as reference. The download script can be obtained in TEMPO download site (https://search.earthdata.nasa.gov/search?fi=TEMPO&fl=3%2B-%2BGridded%2BObservations) and will ask the user credencials and `aggregate_TEMPO.R` read data and agregate in hourly data and the follogins session need to be changed to the correct folder, name of the variables and time period to be processed.
