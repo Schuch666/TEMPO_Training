@@ -71,7 +71,7 @@ terra::lines(coast, col = 'black')
 terra::add_box()
 
 ```
-![*Figure 1* - TEMPO HCHO for 2023-07.](https://raw.githubusercontent.com/schuch666/TEMPO_training/master/FIG/tempo_hcho_202-07.png)
+![*Figure 1* - TEMPO HCHO for 2023-07.](https://raw.githubusercontent.com/schuch666/TEMPO_training/master/FIG/tempo_hcho_2024-07.png)
 
 ## 2. Post-processing and visualization of WRF-Chem
 
