@@ -125,11 +125,11 @@ The evaluation itself is very simple, the function `sat()` is used to evaluate t
 
 ```r
 # for statistical metrics
-table1 <- sat(mo = model_d01 %IN% model_d01, ob = tempo,rname = 'hcho_d01_in_d01_statistic')
+table1 <- sat(mo = model_d01, ob = tempo,rname = 'hcho_d01_statistic')
 print(table1)
 
 # for metrics for categorical evaluation
-table2 <- sat(mo = model_d01 %IN% model_d01, ob = tempo,rname = 'hcho_d01_in_d01_categoric',eval_function = cate,threshold = 0.15)
+table2 <- sat(mo = model_d01, ob = tempo,rname = 'hcho_d01_categoric',eval_function = cate,threshold = 0.15)
 print(table2)
 
 # to save in a .csv
@@ -138,6 +138,9 @@ write_stat(stat = table2, file = 'table2.csv')
 ```
 The output:
 ```r
+croping model_d01 with model_d01 
+removing 6 points for the model (mo) lateral boundaryes ...
+interpolating obsservation (ob) to model grid (mo) ...
                               n      Obs       Sim          r       IOA          FA2     RMSE        MB       ME   NMB (%)  NME (%)
 hcho_d01_in_d01_statistic 39380 1.505612 0.2083641 0.08193024 0.2941764 0.0003047232 1.987868 -1.297248 1.297248 -86.16084 86.16084
 
