@@ -91,7 +91,7 @@ The output can be visualized using `terra::plot()` or `eva3dm::plot_rast()`
 # to catch the file names
 files_form <- dir(path = 'WRF/column/', pattern = 'column_form', full.names = TRUE)
 files_form <- grep('2024-01', files_form, value = TRUE)
-files_form <- grep('12h|13h|14h|15h|16h|17h|18h|19h|20h|21h|22h|23h',files_form, value = TRUE) # for JAN
+files_form <- grep('12h|13h|14h|15h|16h|17h|18h|19h|20h|21h|22h|23h',files_form, value = TRUE)
 
 # open all d01 files
 model_d01 <- rast(grep('d01',files_form, value = TRUE))
