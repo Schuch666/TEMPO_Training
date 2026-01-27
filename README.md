@@ -14,7 +14,7 @@ c. Run the **WRF-Chem** (or get a wrfout file)
 
 ## 1. Opening and visualizating TEMPO data
 
-There is a example of download script (`download_hchoc_2024-07-01.sh`) and pre-processing script (`aggregate_TEMPO.R`) that can be used as reference. The download script can be obtained in TEMPO download site (https://search.earthdata.nasa.gov/search?fi=TEMPO&fl=3%2B-%2BGridded%2BObservations) and will ask the user credencials and `aggregate_TEMPO.R` read data and agregate in hourly data and the follogins session need to be changed to the correct folder, name of the variables and time period to be processed.
+There is a example of download script (`download_hchoc_2024-07-01.sh`) and pre-processing script (`aggregate_TEMPO.R`) that can be used as reference. The download script can be obtained in TEMPO download site (https://search.earthdata.nasa.gov/search?fi=TEMPO&fl=3%2B-%2BGridded%2BObservations) and will ask the user credencials (create an account in https://urs.earthdata.nasa.gov/users/new ) and `aggregate_TEMPO.R` read data and agregate in hourly data and the follogins session need to be changed to the correct folder, name of the variables and time period to be processed.
 
 ```r # set forlders
 input        <- 'G:/TEMPO/DATA/'                # folder with all input data
@@ -28,6 +28,19 @@ file_pathern <- 'TEMPO_HCHO_L3'                 # unique pattern from TEMPO down
 # set time period to process #### July 01
 start        <- as.POSIXct('2024-07-01 00:00:00', tz = 'UTC')
 end          <- as.POSIXlt('2024-07-01 23:00:00', tz = 'UTC')
+```
+
+To start to work with the processed files
+
+
+```r
+library(terra)
+
+tempo     <- rast('processed/tempo_monthly_hcho_2024-01.nc')
+scale     <- 1e-16  # scale
+tempo     <- tempo[[c(13:24)]]  # select only the times with observation, is faster!
+tempo     <- scale * mean(tempo, na.rm = TRUE)
+
 ```
 
 ## 2. Post-processing and visualization of WRF-Chem
