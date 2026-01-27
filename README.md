@@ -5,7 +5,7 @@ Wellcome to the TEMPO training, this is the support document for the training.
 
 **a.** Install the R-packgage **eva3dm** (https://github.com/Schuch666/eva3dm?tab=readme-ov-file#instalation)
 
-**b.** Download the **TEMPO** data from EARTHDATA Search website (https://search.earthdata.nasa.gov/search?fi=TEMPO&fl=3%2B-%2BGridded%2BObservations)
+**b.** Download the **TEMPO** data from EARTHDATA Search website (https://search.earthdata.nasa.gov/search?fi=TEMPO&fl=3%2B-%2BGridded%2BObservations), it must be L3 data or additional steps are needed to make L3
 
 **c.** Run the **WRF-Chem** (or get wrfout files)
 
