@@ -14,7 +14,7 @@ Wellcome to the TEMPO training, this is the support document.
 **[1]** _Schuch, D., (2025). “eva3dm: A R-package for model evaluation of 3D weather and air quality models.” **Journal of Open Source Software**, 10(108), 7797, [doi:10.21105/joss.07797](https://doi.org/10.21105/joss.07797)_
 
 
-## 1. Opening and visualizating TEMPO data
+## 1. Pre-processing, Opening and visualizating TEMPO data
 
 There is a example of download script (`download_hchoc_2024-07-01.sh`) and pre-processing script (`aggregate_TEMPO.R`) that can be used as reference. The download script can be obtained from EARTHDATA Search website (https://search.earthdata.nasa.gov/search?fi=TEMPO&fl=3%2B-%2BGridded%2BObservations) and will ask the user credencials (to create an account use this link https://urs.earthdata.nasa.gov/users/new) and `aggregate_TEMPO.R` read data and agregate in hourly data. Six lines need to be changed: correct folder names, name of the variables and time period to be processed (this process will take a few hours for one month).
 
