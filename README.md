@@ -118,10 +118,10 @@ legend_range(model_d01,show.mean = F)
 
 ## 3. Model evaluation
 
-The evaluation itself is very simple, the function `sat()` is used to evaluate two SpatRaste (obeject from the `terra` R-package) and include:
+The evaluation itself is very simple, the function `sat()` is used to evaluate two `SpatRaster` (obeject from the `terra` R-package) and include:
 - remove 6 points close to the model lateral boundary
 - reproject and interpolate the observations to the model projection and resolution
-- pairing of the data and calculation of metrics (from `eva3dm::stat()`, `eva3dm::cate()`, or any other function)
+- pairing of the data of each layer (mo and ob should have the same number of time-steps, or `SpatRaster` layers) and calculation of metrics (from `eva3dm::stat()`, `eva3dm::cate()`, or any other function)
 
 ```r
 # for statistical metrics
@@ -146,6 +146,7 @@ hcho_d01_in_d01_statistic 39380 1.505612 0.2083641 0.08193024 0.2941764 0.000304
                               n      Obs       Sim  thr        A      CSI      POD        B FAR HSS PSS
 hcho_d01_in_d01_categoric 39380 1.505612 0.2083641 0.15 79.21788 79.21788 79.21788 79.21788   0   0   0
 ```
+Note that this results are 
 
 ## More information:
 **eva3dm** online documentation (https://schuch666.github.io/eva3dm/)
