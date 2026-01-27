@@ -116,7 +116,7 @@ legend_range(model_d01,show.mean = F)
 ![*Figure 2* - TEMPO HCHO for 2023-07.](https://raw.githubusercontent.com/schuch666/TEMPO_training/master/FIG/WRF-Chem-GHG_hcho-2024-07-01.png)
 
 
-## 3. Model evaluation
+## 3. Model evaluation using satellite data from TEMPO
 
 The evaluation itself is very simple, the function `sat()` is used to evaluate two `SpatRaster` (obeject from the `terra` R-package) and include:
 - remove 6 points close to the model lateral boundary
