@@ -35,7 +35,7 @@ end          <- as.POSIXlt('2024-07-01 23:00:00', tz = 'UTC')
 
 The output from `aggregate_TEMPO.R`  are hourly data, and it can be avaraged using the `ncea` command, or any other method:
 ```r
-ncea tempo_hourly_hcho_2024-07-01* tempo_monthly_hcho_2024-07-01.nc
+ncea tempo_hourly_hcho_2024-07-* tempo_monthly_hcho_2024-07.nc
 ```
 
 To start to work with the processed files
