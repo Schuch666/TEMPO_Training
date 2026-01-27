@@ -138,15 +138,15 @@ write_stat(stat = table2, file = 'table2.csv')
 ```
 The output:
 ```r
-croping model_d01 with model_d01 
 removing 6 points for the model (mo) lateral boundaryes ...
 interpolating obsservation (ob) to model grid (mo) ...
                               n      Obs       Sim          r       IOA          FA2     RMSE        MB       ME   NMB (%)  NME (%)
 hcho_d01_in_d01_statistic 39380 1.505612 0.2083641 0.08193024 0.2941764 0.0003047232 1.987868 -1.297248 1.297248 -86.16084 86.16084
 
+removing 6 points for the model (mo) lateral boundaryes ...
+interpolating obsservation (ob) to model grid (mo) ...
                               n      Obs       Sim  thr        A      CSI      POD        B FAR HSS PSS
 hcho_d01_in_d01_categoric 39380 1.505612 0.2083641 0.15 79.21788 79.21788 79.21788 79.21788   0   0   0
-
 ```
 
 ## More information:
