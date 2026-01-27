@@ -16,7 +16,7 @@ Wellcome to the TEMPO training, this is the support document for the training.
 
 ## 1. Pre-processing, Opening and visualizating TEMPO data
 
-There is a example of download script (`download_hchoc_2024-07-01.sh`) and pre-processing script (`aggregate_TEMPO.R`) that can be used as reference. The download script can be obtained from EARTHDATA Search website (https://search.earthdata.nasa.gov/search?fi=TEMPO&fl=3%2B-%2BGridded%2BObservations) and will ask the user credencials (to create an account use this link https://urs.earthdata.nasa.gov/users/new) and `aggregate_TEMPO.R` read data and agregate in hourly data. Six lines need to be updated: folder names, name of the variables and time period to be processed (will take a few hours to process for one month of TEMPO data).
+There is a example of download script (`download_hchoc_2024-07-01.sh`) and pre-processing script (`aggregate_TEMPO.R`) that can be used as reference. The download script can be obtained from EARTHDATA Search website (https://search.earthdata.nasa.gov/search?fi=TEMPO&fl=3%2B-%2BGridded%2BObservations) and will ask the user credencials (to create an account use this link https://urs.earthdata.nasa.gov/users/new) and `aggregate_TEMPO.R` read data and agregate in hourly data. Six lines need to be updated: folder names, name of the variables and time period to be processed (will take a few hours to process for one month of TEMPO L3 data).
 
 ```r
 # set folders
