@@ -1,5 +1,5 @@
 library(terra)
-# set forlders
+# set folders
 input        <- 'G:/TEMPO/DATA/'                # folder with all input data
 output       <- 'G:/TEMPO/processed/'           # folder to save the output
 
@@ -92,4 +92,5 @@ while(day <= end){
            overwrite=TRUE)
   
   day = day + one_day
+
 }
