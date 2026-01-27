@@ -4,7 +4,9 @@ Wellcome to the TEMPO training, this is the suport document.
 ## Before start this training you need:
 
 a. Install the R-packgage **eva3dm** (https://github.com/Schuch666/eva3dm?tab=readme-ov-file#instalation)
+
 b. Download the **TEMPO** data (https://search.earthdata.nasa.gov/search?fi=TEMPO&fl=3%2B-%2BGridded%2BObservations)
+
 c. Run the **WRF-Chem** (or get a wrfout file)
 
 ## If the content of this training or the **eva3dm** R-Package is used in any conference of any kind of publication, pleace cite the following paper:
