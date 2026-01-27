@@ -83,7 +83,10 @@ var           <- 'form'
 domains       = c('d01','d02','d03')
 output_folder <- '/scratch/schuch/WRF-Chem-GHG/WRF/column'
 ```
-This script uses the `calculate_column()` function to process each hour of WRF-Chem output (https://schuch666.github.io/eva3dm/reference/calculate_column.html).
+This script uses the `calculate_column()` function from eva3dm R-packeg to process each hour of WRF-Chem output (https://schuch666.github.io/eva3dm/reference/calculate_column.html).
+
+The output can be visualized using `terra::plot()` or `eva3dm::plot_rast()`
+
 
 
 ## 3. Model evaluation
