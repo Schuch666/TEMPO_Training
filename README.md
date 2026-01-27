@@ -14,7 +14,7 @@ Welcome to the TEMPO training, this is the support document for the training.
 **[1]** _Schuch, D., (2025). “eva3dm: A R-package for model evaluation of 3D weather and air quality models.” **Journal of Open Source Software**, 10(108), 7797, [doi:10.21105/joss.07797](https://doi.org/10.21105/joss.07797)_
 
 
-## 1. Downloading, Pre-processing, Opening and visualizating TEMPO data
+## 1. Downloading, Pre-Processing, Opening and Visualizating TEMPO data
 
 There is a example of download script (`download_hchoc_2024-07-01.sh`) and pre-processing script (`aggregate_TEMPO.R`) that can be used as reference. The download script can be obtained from EARTHDATA Search website (https://search.earthdata.nasa.gov/search?fi=TEMPO&fl=3%2B-%2BGridded%2BObservations) and will ask the user credencials (to create an account use this link https://urs.earthdata.nasa.gov/users/new) and `aggregate_TEMPO.R` read data and agregate in hourly data. Six lines need to be updated: folder names, name of the variables and time period to be processed (will take a few hours to process for one month of TEMPO L3 data).
 
@@ -73,7 +73,7 @@ terra::add_box()
 ```
 ![*Figure 1* - TEMPO HCHO for 2023-07.](https://raw.githubusercontent.com/schuch666/TEMPO_training/master/FIG/tempo_hcho_2024-07.png)
 
-## 2. Post-processing and visualization of WRF-Chem
+## 2. Post-Processing and Visualization of WRF-Chem
 
 The post-processing of WRF outputs are done using R, there is a submission script (`submit_column.sh`) and a source script (`process_form_column.R`).
 
@@ -116,7 +116,7 @@ legend_range(model_d01,show.mean = F)
 ![*Figure 2* - TEMPO HCHO for 2023-07.](https://raw.githubusercontent.com/schuch666/TEMPO_training/master/FIG/WRF-Chem-GHG_hcho-2024-07-01.png)
 
 
-## 3. Model evaluation using satellite data from TEMPO
+## 3. Model Evaluation using Satellite data from TEMPO
 
 The evaluation itself is very simple, but require the code and outputs from previsous steps, the function `sat()` is used to evaluate two `SpatRaster` (obeject from the `terra` R-package) and include:
 - remove 6 points close to the model lateral boundary
