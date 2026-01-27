@@ -1,5 +1,5 @@
 # TEMPO Training (2025-01-29)
-Wellcome to the TEMPO training, this is the support document.
+Wellcome to the TEMPO training, this is the support document for the training.
 
 ## Before start you need:
 
