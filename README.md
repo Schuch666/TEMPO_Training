@@ -49,6 +49,25 @@ scale     <- 1e-16  # scale
 tempo     <- tempo[[c(13:24)]]  # select only the times with observation, is faster!
 tempo     <- scale * mean(tempo, na.rm = TRUE)
 
+coast       <- terra::vect(paste0(system.file("extdata",package="eva3dm"),"/coast.shp"))
+US          <- terra::vect(paste0(system.file("extdata",package="eva3dm"),"/US.shp"))
+
+new_color  <- colorRampPalette(c(
+  "#00ffff",  # Cyan
+  "#04befe",  # Light blue
+  "#68f096",  # Greenish
+  "#f3fe02",  # Yellow
+  "#ff9a00",  # Orange
+  "#ff4f00",  # Orange-red
+  "#c61a00",  # Dark red
+  "#a00000",  # Deeper red
+  "#600000"   # Very dark red
+))
+
+plot_rast(tempo, main = "TEMPO HCHO",grid = T, grid_col = 'black', color = new_color(100))
+terra::lines(US, col = 'white')
+terra::lines(coast, col = 'white')
+
 ```
 
 ## 2. Post-processing and visualization of WRF-Chem
