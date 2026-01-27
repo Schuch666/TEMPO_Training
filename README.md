@@ -75,7 +75,14 @@ terra::add_box()
 
 ## 2. Post-processing and visualization of WRF-Chem
 
-The post-processing of 
+The post-processing of WRF outputs are done using R, there is a submission script (submit_column.sh) and a source script (process_form_column.R).
+
+in the source script this lines need to be changed for the variable name, domains and output folder:
+```r 
+var           <- 'form'
+domains       = c('d01','d02','d03')
+output_folder <- '/scratch/schuch/WRF-Chem-GHG/WRF/column'
+```
 
 ## 3. Model evaluation
 
