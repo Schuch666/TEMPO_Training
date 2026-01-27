@@ -150,7 +150,7 @@ hcho_d01_categoric 39380 1.505612 0.2083641 0.15 79.21788 79.21788 79.21788 79.2
 ```
 Note that this results are not meaninful but ilustrate each of the steps needed to use **eva3dm** to evaluate WRF-Chem model against TEMPO data. 
 
-Also, there is a good amount of choices in each evaluaion: for example, the **time interval** that will me avaraged, selection of the **specific hours**, there is a need to **select the region** or even **new metrics** need to be used.
+Also, there is a good amount of choices in each evaluaion: for example, the **time interval** that will me avaraged, selection of the **specific hours**, there is a need to **select the region** or even **new metrics** need to be applied.
 
 **Have fun!**
 
