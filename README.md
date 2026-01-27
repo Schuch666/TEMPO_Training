@@ -65,9 +65,9 @@ new_color  <- colorRampPalette(c(
   "#600000"   # Very dark red
 ))
 
-plot_rast(tempo, main = "TEMPO HCHO",grid = T, grid_col = 'black', color = new_color(100),range = c(0,10))
+plot_rast(tempo, main = "TEMPO 1e-16 HCHO (2024-07)", color = new_color(100),range = c(0,10))
 terra::lines(US, col = 'white')
-terra::lines(coast, col = 'white')
+terra::lines(coast, col = 'black')
 terra::add_box()
 
 ```
