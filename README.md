@@ -38,7 +38,7 @@ The output from `aggregate_TEMPO.R`  are hourly data, and it can be avaraged usi
 ncea tempo_hourly_hcho_2024-07-* tempo_monthly_hcho_2024-07.nc
 ```
 
-To start to work with the processed files
+To start to work with the TEMPO processed files
 
 
 ```r
