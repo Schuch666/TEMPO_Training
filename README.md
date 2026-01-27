@@ -1,7 +1,7 @@
 # TEMPO Training (2025-01-29)
 Wellcome to the TEMPO training, this is the support document.
 
-## Before start this training you need:
+## Before start you need:
 
 **a.** Install the R-packgage **eva3dm** (https://github.com/Schuch666/eva3dm?tab=readme-ov-file#instalation)
 
