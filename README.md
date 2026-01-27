@@ -43,8 +43,9 @@ To start to work with the TEMPO processed files
 
 ```r
 library(terra)
+library(eva3dm)
 
-tempo     <- rast('processed/tempo_monthly_hcho_2024-01.nc')
+tempo     <- rast('processed/tempo_monthly_hcho_2024-07.nc')
 scale     <- 1e-16  # scale
 tempo     <- tempo[[c(13:24)]]  # select only the times with observation, is faster!
 tempo     <- scale * mean(tempo, na.rm = TRUE)
@@ -64,9 +65,10 @@ new_color  <- colorRampPalette(c(
   "#600000"   # Very dark red
 ))
 
-plot_rast(tempo, main = "TEMPO HCHO",grid = T, grid_col = 'black', color = new_color(100))
+plot_rast(tempo, main = "TEMPO HCHO",grid = T, grid_col = 'black', color = new_color(100),range = c(0,10))
 terra::lines(US, col = 'white')
 terra::lines(coast, col = 'white')
+terra::add_box()
 
 ```
 
