@@ -141,13 +141,17 @@ The output:
 ```r
 removing 6 points for the model (mo) lateral boundaryes ...
 interpolating obsservation (ob) to model grid (mo) ...
-                              n      Obs       Sim          r       IOA          FA2     RMSE        MB       ME   NMB (%)  NME (%)
-hcho_d01_in_d01_statistic 39380 1.505612 0.2083641 0.08193024 0.2941764 0.0003047232 1.987868 -1.297248 1.297248 -86.16084 86.16084
+                       n      Obs       Sim          r       IOA          FA2     RMSE        MB       ME   NMB (%)  NME (%)
+hcho_d01_statistic 39380 1.505612 0.2083641 0.08193024 0.2941764 0.0003047232 1.987868 -1.297248 1.297248 -86.16084 86.16084
 
-                              n      Obs       Sim  thr        A      CSI      POD        B FAR HSS PSS
-hcho_d01_in_d01_categoric 39380 1.505612 0.2083641 0.15 79.21788 79.21788 79.21788 79.21788   0   0   0
+                       n      Obs       Sim  thr        A      CSI      POD        B FAR HSS PSS
+hcho_d01_categoric 39380 1.505612 0.2083641 0.15 79.21788 79.21788 79.21788 79.21788   0   0   0
 ```
-Note that this results are 
+Note that this results are not meaninful but ilustrate each of the steps needed to evaluate using eva3dm. 
+
+Also, there is a good amount of choices in each evaluaion: for example, the time interval that will me avaraged, selection of the pecific hours, there is a need to select some region or even new metrics need to be used.
+
+Have fun!
 
 ## More information:
 **eva3dm** online documentation (https://schuch666.github.io/eva3dm/)
