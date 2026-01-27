@@ -121,7 +121,7 @@ legend_range(model_d01,show.mean = F)
 The evaluation itself is very simple, the function `sat()` is used to evaluate two SpatRaste (obeject from the `terra` R-package) and include:
 - remove 6 points close to the model lateral boundary
 - reproject and interpolate the observations to the model projection and resolution
-- pairing of the data and calculation of metrics
+- pairing of the data and calculation of metrics (from `eva3dm::stat()`, `eva3dm::cate()`, or any other function)
 
 ```r
 # for statistical metrics
