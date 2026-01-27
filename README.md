@@ -118,7 +118,7 @@ legend_range(model_d01,show.mean = F)
 
 ## 3. Model evaluation using satellite data from TEMPO
 
-The evaluation itself is very simple, the function `sat()` is used to evaluate two `SpatRaster` (obeject from the `terra` R-package) and include:
+The evaluation itself is very simple, but require the code and outputs from previsous steps, the function `sat()` is used to evaluate two `SpatRaster` (obeject from the `terra` R-package) and include:
 - remove 6 points close to the model lateral boundary
 - reproject and interpolate the observations to the model projection and resolution
 - pairing of the data of each layer (mo and ob should have the same number of time-steps, or `SpatRaster` layers) and perform the calculation of metrics (from `eva3dm::stat()`, `eva3dm::cate()`, or any other function).
