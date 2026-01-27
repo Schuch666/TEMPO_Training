@@ -87,6 +87,33 @@ This script uses the `calculate_column()` function from eva3dm R-packeg to proce
 
 The output can be visualized using `terra::plot()` or `eva3dm::plot_rast()`
 
+```r
+# to catch the file names
+files_form <- dir(path = 'WRF/column/', pattern = 'column_form', full.names = TRUE)
+files_form <- grep('2024-01', files_form, value = TRUE)
+files_form <- grep('12h|13h|14h|15h|16h|17h|18h|19h|20h|21h|22h|23h',files_form, value = TRUE) # for JAN
+
+# open all d01 files
+model_d01 <- rast(grep('d01',files_form, value = TRUE))
+# avarage and use the same scale number used for TEMPO
+model_d01 <- scale * mean(model_d01, na.rm = TRUE)
+
+# to plot maps the lines must be in the same coordinade system
+coast_d01   <- project(coast, model_d01)    # this is diff. for each domain
+US_d01      <- project(US,model_d01)        # this is diff. for each domain
+
+fig_unit  = paste0(scale,'\nmolecules\ncm-2')
+
+plot_rast(model_d01,
+          main = paste0('HCHO - WRF-Chem-GHG d01 (avarage for 2024-07-01)'),unit = fig_unit,plg = list(tic = "none", shrink = 0.97),
+          grid = T,grid_col = 'black', color = new_color(100),range = c(0,2))
+terra::lines(US_d01, col = 'white')
+terra::lines(coast_d01, col = 'white')
+legend_range(model_d01,show.mean = F)
+
+```
+
+![*Figure 2* - TEMPO HCHO for 2023-07.](https://raw.githubusercontent.com/schuch666/TEMPO_training/master/FIG/WRF-Chem-GHG_hcho-2024-07-01.png)
 
 
 ## 3. Model evaluation
