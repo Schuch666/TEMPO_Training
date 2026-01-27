@@ -147,11 +147,11 @@ hcho_d01_statistic 39380 1.505612 0.2083641 0.08193024 0.2941764 0.0003047232 1.
                        n      Obs       Sim  thr        A      CSI      POD        B FAR HSS PSS
 hcho_d01_categoric 39380 1.505612 0.2083641 0.15 79.21788 79.21788 79.21788 79.21788   0   0   0
 ```
-Note that this results are not meaninful but ilustrate each of the steps needed to evaluate using eva3dm. 
+Note that this results are not meaninful but ilustrate each of the steps needed to evaluate using **eva3dm**. 
 
-Also, there is a good amount of choices in each evaluaion: for example, the time interval that will me avaraged, selection of the pecific hours, there is a need to select some region or even new metrics need to be used.
+Also, there is a good amount of choices in each evaluaion: for example, the **time interval** that will me avaraged, selection of the **specific hours**, there is a need to **select the region** or even **new metrics** need to be used.
 
-Have fun!
+**Have fun!**
 
 ## More information:
 **eva3dm** online documentation (https://schuch666.github.io/eva3dm/)
