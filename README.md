@@ -11,6 +11,10 @@ In this tutorial you will learn:
 
 **iv.**  How to **Evaluate** a 3d-air quality model against satellite (or any regular grid data) using **eva3dm**
 
+## If the content of this training or the **eva3dm** R-Package is used in any conference of any kind of publication, pleace cite the following paper:
+
+**[1]** _Schuch, D., (2025). “eva3dm: A R-package for model evaluation of 3D weather and air quality models.” **Journal of Open Source Software**, 10(108), 7797, [doi:10.21105/joss.07797](https://doi.org/10.21105/joss.07797)_
+
 ## Before start you need:
 
 **a.** Install the R-packgage **eva3dm** (https://github.com/Schuch666/eva3dm?tab=readme-ov-file#instalation)
@@ -18,11 +22,6 @@ In this tutorial you will learn:
 **b.** Download the **TEMPO** data from EARTHDATA Search website (https://search.earthdata.nasa.gov/search?fi=TEMPO&fl=3%2B-%2BGridded%2BObservations), it must be L3 data or additional steps (not covered in this totorial) are needed to make L3
 
 **c.** Run the **WRF-Chem** (or get wrfout files)
-
-## If the content of this training or the **eva3dm** R-Package is used in any conference of any kind of publication, pleace cite the following paper:
-
-**[1]** _Schuch, D., (2025). “eva3dm: A R-package for model evaluation of 3D weather and air quality models.” **Journal of Open Source Software**, 10(108), 7797, [doi:10.21105/joss.07797](https://doi.org/10.21105/joss.07797)_
-
 
 ## 1. Downloading, Pre-Processing, Opening and Visualizating TEMPO data
 
