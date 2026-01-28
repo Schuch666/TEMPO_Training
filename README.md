@@ -1,4 +1,4 @@
-# TEMPO Training (2025-01-29) <img src="https://github.com/Schuch666/eva3dm/man/figures/logo.gif" align="right" width="140"/>
+# TEMPO Training (2025-01-29) <img src="FIG/logo_eva3dm.gif" align="right" width="140"/>
 Welcome to the TEMPO training, this is the support document for the training.
 
 ## Before start you need:
