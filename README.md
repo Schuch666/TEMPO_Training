@@ -77,13 +77,13 @@ terra::add_box()
 
 The post-processing of WRF outputs are done using R, there is a submission script (`submit_column.sh`) and a source script (`process_form_column.R`).
 
-in the source script this lines need to be changed for the variable name, domains and output folder:
+In the source script this lines need to be changed for the variable name, domains and output folder:
 ```r 
 var           <- 'form'
 domains       = c('d01','d02','d03')
 output_folder <- '/scratch/schuch/WRF-Chem-GHG/WRF/column'
 ```
-This script uses the `calculate_column()` function from eva3dm R-packeg to integrate vertically the column concentrations from WRF output for each hour of WRF-Chem output (https://schuch666.github.io/eva3dm/reference/calculate_column.html).
+This script uses the `calculate_column()` function from eva3dm R-package to integrate vertically the column concentrations from WRF output for each hour of WRF-Chem output (https://schuch666.github.io/eva3dm/reference/calculate_column.html).
 
 The output can be visualized using `terra::plot()` or `eva3dm::plot_rast()`
 
@@ -121,7 +121,7 @@ legend_range(model_d01,show.mean = F)
 The evaluation itself is very simple, but require the code and outputs from previsous steps, the function `sat()` is used to evaluate two `SpatRaster` (obeject from the `terra` R-package) and include:
 - remove 6 points close to the model lateral boundary
 - reproject and interpolate the observations to the model projection and resolution
-- pairing of the data of each layer (mo and ob should have the same number of time-steps, or `SpatRaster` layers) and perform the calculation of metrics (from `eva3dm::stat()`, `eva3dm::cate()`, or any other function).
+- pairing of the data of each layer (the arguments *mo* and *ob* should have the same number of time-steps, or `SpatRaster` layers) and perform the calculation of metrics (from `eva3dm::stat()`, `eva3dm::cate()`, or any other function).
 - other options can be explored using the function arguments: n, min, max, scale, method, eval_function, mask and skip_inter. See https://schuch666.github.io/eva3dm/reference/sat.html.
 
 ```r
@@ -150,7 +150,7 @@ hcho_categoric 39380 1.505612 0.2083641 0.15 79.21788 79.21788 79.21788 79.21788
 ```
 Note that this results are not meaninful but ilustrate each of the steps needed to use **eva3dm** to evaluate **WRF-Chem model** against **TEMPO data**. 
 
-Also, there is a good amount of choices in each evaluaion: for example, the **time interval** that will me avaraged, selection of the **specific hours**, there is a need to **select the region** or even **new metrics** need to be applied.
+Also, there is a good amount of choices in each evaluation: for example, the **time interval** that will be averaged, selection of the **specific hours**, there is a need to **select the region** or even **new metrics** need to be applied.
 
 **Have fun!**
 
