@@ -13,7 +13,7 @@ In this tutorial you will learn:
 
 ## If the content of this training or the **eva3dm** R-Package is used in any conference of any kind of publication, pleace cite the following paper:
 
-```r _Schuch, D., (2025). “eva3dm: A R-package for model evaluation of 3D weather and air quality models.” **Journal of Open Source Software**, 10(108), 7797, [doi:10.21105/joss.07797](https://doi.org/10.21105/joss.07797)_ ```
+_Schuch, D., (2025). “eva3dm: A R-package for model evaluation of 3D weather and air quality models.” **Journal of Open Source Software**, 10(108), 7797, [doi:10.21105/joss.07797](https://doi.org/10.21105/joss.07797)_
 
 ## Before start you need:
 
