@@ -9,7 +9,7 @@ You will learn:
 
 **iii.** How to **post-process** WRF-CHem outputs to performa **satelitte evaluation**
 
-**iv.**  **Evaluate** WRF-Chem using **eva3dm**
+**iv.**  **Evaluation** of air quality model against satellite (or any regular grid data) using **eva3dm**
 
 ## Before start you need:
 
