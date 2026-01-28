@@ -1,7 +1,7 @@
 # TEMPO Training (2025-01-29) <img src="FIG/logo_eva3dm.gif" align="right" width="140"/>
 Welcome to the TEMPO training, this is the support document for the training.
 
-You will learn:
+In this tutorial you will learn:
 
 **i.**  Where to **download TEMPO** data using bash
 
