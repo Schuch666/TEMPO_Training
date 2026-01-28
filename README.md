@@ -11,7 +11,7 @@ In this tutorial you will learn:
 
 **iv.**  How to **Evaluate** a 3d-air quality model against satellite (or any regular grid data) using **eva3dm**
 
-# If this trainig or **eva3dm** is used in any conference or publication, pleace cite:
+# If this trainig or **eva3dm** is used in any conference or publication, pleace CITE:
 
 _Schuch, D., (2025). “eva3dm: A R-package for model evaluation of 3D weather and air quality models.” **Journal of Open Source Software**, 10(108), 7797, [doi:10.21105/joss.07797](https://doi.org/10.21105/joss.07797)_
 
