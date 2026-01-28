@@ -2,9 +2,13 @@
 Welcome to the TEMPO training, this is the support document for the training.
 
 You will learn:
+
 i.  Where to **download TEMPO** data using bash
+
 ii. How to **pre-process** TEMPO data using the R-package **terra**
+
 iv. How to **post-process** WRF-CHem outputs to performa **satelitte evaluation**
+
 v.  **Evaluate** WRF-Chem using **eva3dm**
 
 ## Before start you need:
